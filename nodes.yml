@@ -1,0 +1,16 @@
+nodes:
+  cdn:
+    name: CDN
+    accepted:
+      input:
+        - 'pcf-gateway'
+        - 'filestorage'
+    description: Lorem ipsum
+    tags:
+      - "Prod Ready"
+      - "AWS"
+  pcf-gateway:
+    name: PCF Gateway
+    tags:
+      - "Prod Ready"
+      - "PCF"
