@@ -1,8 +1,8 @@
 nodes:
   cdn:
     name: CDN
-    description: Lorem ipsum
     options:
+      description: Lorem ipsum
       accepted:
         input:
           - 'pcf-gateway'
@@ -12,8 +12,8 @@ nodes:
         - "AWS"
   pcf-gateway:
     name: PCF Gateway
-    description: Lorem ipsum
     options:
+      description: Lorem ipsum
       tags:
         - "Prod Ready"
         - "AWS"
