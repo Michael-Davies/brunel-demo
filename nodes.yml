@@ -2,7 +2,7 @@ nodes:
   cdn:
     name: CDN
     options:
-      description: Lorem ipsum
+      description: Lorem ipsum https://google.com
       accepted:
         input:
           - 'pcf-gateway'
