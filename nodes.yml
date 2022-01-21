@@ -28,3 +28,7 @@ nodes:
       tags:
         - "Prod Ready"
         - "AWS"
+      data:
+        repo: 'string'
+        min: 'string'
+        max: 'string'
