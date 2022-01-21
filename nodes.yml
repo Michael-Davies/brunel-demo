@@ -17,3 +17,14 @@ nodes:
       tags:
         - "Prod Ready"
         - "AWS"
+  pcf-node:
+    name: PCF Node
+    options:
+      isNameable: true
+      description: Lorem ipsum
+      accepted:
+        input:
+          - pcf-gateway
+      tags:
+        - "Prod Ready"
+        - "AWS"
