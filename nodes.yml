@@ -1,34 +1,104 @@
 nodes:
-  cdn:
-    name: CDN
+  aws-api-gateway:
+    name: AWS API Gateway
     options:
-      description: Lorem ipsum test https://google.com
+      accepted:
+        output:
+          - aws-ecs
+          - aws-ec2
+          - aws-eks
+      description: Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+      tags:
+        - "AWS"
+        - "Gateway"
+      icon: cloud
+  aws-lambda:
+    name: Microservice (Lambda)
+    options:
       accepted:
         input:
-          - 'pcf-gateway'
-          - 'filestorage'
+          - aws-api-gateway
       tags:
-        - "Prod Ready"
         - "AWS"
-  pcf-gateway:
-    name: PCF Gateway
-    options:
-      description: Lorem ipsum
-      tags:
-        - "Prod Ready"
-        - "AWS"
-  pcf-node:
-    name: PCF Node
-    options:
+        - "Serverless"
       isNameable: true
-      description: Lorem ipsum
+      color: '#f37b05'
+  aws-eks:
+    name: Microservice (EKS)
+    options:
       accepted:
         input:
-          - pcf-gateway
+          - aws-api-gateway
       tags:
-        - "Prod Ready"
         - "AWS"
-      data:
-        repo: 'string'
-        min: 'string'
-        max: 'string'
+        - "Kubenetes"
+      isNameable: true
+      color: '#f37b05'
+  aws-ec2:
+    name: Microservice (EC2)
+    options:
+      accepted:
+        input:
+          - aws-api-gateway
+      tags:
+        - "AWS"
+        - "EC2"
+      isNameable: true
+      color: '#f37b05'
+  aws-ecs:
+    name: Microservice (ECS)
+    options:
+      accepted:
+        input:
+          - aws-api-gateway
+      tags:
+        - "AWS"
+        - "ECS"
+      isNameable: true
+      color: '#f37b05'
+  aws-rds-mysql:
+    name: AWS RDS MySQL
+    options:
+      accepted:
+        input:
+          - aws-lambda
+          - aws-eks
+          - aws-ecs
+          - aws-ec2
+      tags:
+        - "AWS"
+        - "Database"
+      isNameable: true
+      color: '#146eb4'
+      icon: database
+  aws-rds-postgres:
+    name: AWS RDS Postgres
+    options:
+      accepted:
+        input:
+          - aws-lambda
+          - aws-eks
+          - aws-ecs
+          - aws-ec2
+      tags:
+        - "AWS"
+        - "Database"
+      isNameable: true
+      color: '#146eb4'
+      icon: database
+  aws-rds-mariadb:
+    name: AWS RDS MariaDB
+    options:
+      accepted:
+        input:
+          - aws-lambda
+          - aws-eks
+          - aws-ecs
+          - aws-ec2
+      tags:
+        - "AWS"
+        - "Database"
+      isNameable: true
+      color: '#146eb4'
+      icon: database
+
