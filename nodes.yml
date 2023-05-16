@@ -102,4 +102,81 @@ nodes:
       isNameable: true
       color: '#146eb4'
       icon: database
+  aws-s3:
+    name: AWS S3
+    options:
+      accepted:
+        input:
+          - aws-lambda
+      tags:
+        - "AWS"
+        - "Storage"
+      isNameable: true
+      color: '#FF9900'
+  aws-dynamodb:
+    name: AWS DynamoDB
+    options:
+      accepted:
+        input:
+          - aws-lambda
+      tags:
+        - "AWS"
+        - "Database"
+      isNameable: true
+      color: '#DBDB00'
+  aws-sqs:
+    name: AWS SQS
+    options:
+      accepted:
+        input:
+          - aws-lambda
+      tags:
+        - "AWS"
+        - "Messaging"
+      isNameable: true
+      color: '#00DB00'
+  aws-sns:
+    name: AWS SNS
+    options:
+      accepted:
+        input:
+          - aws-lambda
+      tags:
+        - "AWS"
+        - "Notification"
+      isNameable: true
+      color: '#0000FF'
+  aws-glue:
+    name: AWS Glue
+    options:
+      accepted:
+        input:
+          - aws-ec2
+      tags:
+        - "AWS"
+        - "Data"
+      isNameable: true
+      color: '#FF00FF'
+  aws-redshift:
+    name: AWS Redshift
+    options:
+      accepted:
+        input:
+          - aws-ec2
+      tags:
+        - "AWS"
+        - "Data"
+      isNameable: true
+      color: '#FF00FF'
+  aws-step-functions:
+    name: AWS Step Functions
+    options:
+      accepted:
+        input:
+          - aws-lambda
+      tags:
+        - "AWS"
+        - "Workflow"
+      isNameable: true
+      color: '#800080'
 
