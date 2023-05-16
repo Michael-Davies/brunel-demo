@@ -371,7 +371,6 @@ nodes:
       isNameable: true
       color: '#4285F4'
       icon: server
-  
 
   azure-functions:
     name: Azure Functions
