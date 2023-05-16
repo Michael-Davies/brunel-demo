@@ -60,7 +60,7 @@ nodes:
       icon: server
 
   aws-eks:
-    name: AWS Elastic Kubernetes Service (EKS)
+    name: AWS EKS
     options:
       accepted:
         input:
@@ -276,7 +276,7 @@ nodes:
       icon: server
 
   gcp-kubernetes-engine:
-    name: Google Kubernetes Engine (GKE)
+    name: Google GKE
     options:
       accepted:
         input:
@@ -289,7 +289,7 @@ nodes:
       color: '#4285F4'
       icon: server
 
-gcp-cloud-run:
+  gcp-cloud-run:
     name: Google Cloud Run
     options:
       accepted:
@@ -402,7 +402,7 @@ gcp-cloud-run:
       icon: server
 
   azure-kubernetes-service:
-    name: Azure Kubernetes Service (AKS)
+    name: Azure AKS
     options:
       accepted:
         input:
