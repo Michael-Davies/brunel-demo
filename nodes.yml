@@ -398,3 +398,102 @@ nodes:
       isNameable: true
       color: '#0078D4'
       icon: database
+  gcp-cloud-run:
+    name: Google Cloud Run
+    options:
+      accepted:
+        input:
+          - gcp-api-gateway
+      description: Google Cloud Run is a fully managed serverless platform that allows you to run containerized applications. It automatically scales your containers based on incoming request traffic.
+      tags:
+        - "GCP"
+        - "Serverless"
+      isNameable: true
+      color: '#4285F4'
+      icon: cloud_run
+
+  gcp-cloud-sql:
+    name: Google Cloud SQL
+    options:
+      accepted:
+        input:
+          - gcp-cloud-functions
+      description: Google Cloud SQL is a fully managed relational database service that makes it easy to set up, manage, and administer MySQL, PostgreSQL, and SQL Server databases in the cloud.
+      tags:
+        - "GCP"
+        - "Database"
+      isNameable: true
+      color: '#4285F4'
+      icon: database
+
+  gcp-cloud-storage:
+    name: Google Cloud Storage
+    options:
+      accepted:
+        input:
+          - gcp-cloud-functions
+      description: Google Cloud Storage is a scalable and durable object storage service that allows you to store and retrieve data from anywhere on the web. It provides secure and cost-effective storage options.
+      tags:
+        - "GCP"
+        - "Storage"
+      isNameable: true
+      color: '#4285F4'
+      icon: storage
+
+  gcp-pubsub:
+    name: Google Cloud Pub/Sub
+    options:
+      accepted:
+        input:
+          - gcp-cloud-functions
+      description: Google Cloud Pub/Sub is a messaging service that enables you to send and receive event-driven messages between independent applications. It provides reliable and scalable message delivery.
+      tags:
+        - "GCP"
+        - "Messaging"
+      isNameable: true
+      color: '#4285F4'
+      icon: pubsub
+
+  gcp-dataflow:
+    name: Google Cloud Dataflow
+    options:
+      accepted:
+        input:
+          - gcp-cloud-sql
+          - gcp-cloud-storage
+      description: Google Cloud Dataflow is a fully managed service for transforming and enriching data in real-time and batch modes. It simplifies the process of building data pipelines.
+      tags:
+        - "GCP"
+        - "Data"
+      isNameable: true
+      color: '#4285F4'
+      icon: dataflow
+
+  gcp-bigquery:
+    name: Google BigQuery
+    options:
+      accepted:
+        input:
+          - gcp-cloud-sql
+      description: Google BigQuery is a serverless data warehouse that allows you to analyze massive datasets using SQL queries. It offers fast and scalable analytics with built-in machine learning capabilities.
+      tags:
+        - "GCP"
+        - "Data"
+      isNameable: true
+      color: '#4285F4'
+      icon: bigquery
+  gcp-api-gateway:
+    name: GCP API Gateway
+    options:
+      accepted:
+        output:
+          - gcp-cloud-run
+          - gcp-cloud-functions
+          - gcp-cloud-sql
+          - gcp-cloud-storage
+      description: Google Cloud API Gateway is a fully managed service that enables you to secure, manage, and monitor your APIs. It provides authentication, rate limiting, and other features to ensure reliable API access.
+      tags:
+        - "GCP"
+        - "Gateway"
+      icon: cloud
+      color: '#4285F4'
