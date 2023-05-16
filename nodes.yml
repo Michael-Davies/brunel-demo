@@ -26,7 +26,7 @@ nodes:
         - "Serverless"
       isNameable: true
       color: '#FF9900'
-      icon: function
+      icon: lambda
 
   aws-eks:
     name: AWS Elastic Kubernetes Service (EKS)
@@ -43,7 +43,7 @@ nodes:
       icon: cluster
 
   aws-ec2:
-    name: Amazon EC2
+    name: AWS EC2
     options:
       accepted:
         input:
@@ -57,7 +57,7 @@ nodes:
       icon: server
 
   aws-ecs:
-    name: Amazon ECS
+    name: AWS ECS
     options:
       accepted:
         input:
@@ -71,7 +71,7 @@ nodes:
       icon: container
 
   aws-rds-mysql:
-    name: Amazon RDS MySQL
+    name: AWS RDS MySQL
     options:
       accepted:
         input:
@@ -88,7 +88,7 @@ nodes:
       icon: database
 
   aws-rds-postgres:
-    name: Amazon RDS PostgreSQL
+    name: AWS RDS PostgreSQL
     options:
       accepted:
         input:
@@ -104,7 +104,7 @@ nodes:
       color: '#146eb4'
       icon: database
   aws-rds-mariadb:
-    name: Amazon RDS MariaDB
+    name: AWS RDS MariaDB
     options:
       accepted:
         input:
@@ -121,7 +121,7 @@ nodes:
       icon: database
 
   aws-s3:
-    name: Amazon S3
+    name: AWS S3
     options:
       accepted:
         input:
@@ -135,7 +135,7 @@ nodes:
       icon: storage
 
   aws-dynamodb:
-    name: Amazon DynamoDB
+    name: AWS DynamoDB
     options:
       accepted:
         input:
@@ -149,7 +149,7 @@ nodes:
       icon: database
 
   aws-sqs:
-    name: Amazon SQS
+    name: AWS SQS
     options:
       accepted:
         input:
@@ -163,7 +163,7 @@ nodes:
       icon: queue
 
   aws-sns:
-    name: Amazon SNS
+    name: AWS SNS
     options:
       accepted:
         input:
@@ -191,7 +191,7 @@ nodes:
       icon: glue
 
   aws-redshift:
-    name: Amazon Redshift
+    name: AWS Redshift
     options:
       accepted:
         input:
