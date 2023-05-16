@@ -497,18 +497,3 @@ nodes:
         - "Gateway"
       icon: cloud
       color: '#4285F4'
-  azure-api-management:
-    name: Azure API Management
-    options:
-      accepted:
-        output:
-          - azure-functions
-          - azure-logic-apps
-          - azure-data-lake-storage
-          - azure-cosmos-db
-      description: Azure API Management is a fully managed service that enables you to create, publish, secure, and monitor APIs. It provides features like authentication, rate limiting, caching, and developer portal for API management.
-      tags:
-        - "Azure"
-        - "Gateway"
-      icon: cloud
-      color: '#0078D4'
