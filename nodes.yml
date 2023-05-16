@@ -315,3 +315,86 @@ nodes:
       isNameable: true
       color: '#0078D4'
       icon: database
+  azure-storage:
+    name: Azure Storage
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Storage provides scalable and secure object storage for blobs, files, queues, tables, and disks. It offers various storage options to suit different application needs.
+      tags:
+        - "Azure"
+        - "Storage"
+      isNameable: true
+      color: '#0078D4'
+      icon: storage
+
+  azure-service-bus:
+    name: Azure Service Bus
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Service Bus is a fully managed enterprise message broker that provides reliable messaging between applications and services. It supports messaging patterns such as publish/subscribe and request/reply.
+      tags:
+        - "Azure"
+        - "Messaging"
+      isNameable: true
+      color: '#0078D4'
+      icon: queue
+
+  azure-event-grid:
+    name: Azure Event Grid
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Event Grid is a fully managed event routing service that simplifies the development of event-driven applications. It allows you to react to events from various sources and route them to different handlers.
+      tags:
+        - "Azure"
+        - "Event"
+      isNameable: true
+      color: '#0078D4'
+      icon: event
+
+  azure-logic-apps:
+    name: Azure Logic Apps
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Logic Apps is a serverless visual workflow service that allows you to build and automate business processes and integrations. It provides a low-code approach for connecting various services and systems.
+      tags:
+        - "Azure"
+        - "Workflow"
+      isNameable: true
+      color: '#0078D4'
+      icon: workflow
+
+  azure-data-lake-storage:
+    name: Azure Data Lake Storage
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Data Lake Storage is a highly scalable and secure data lake solution that allows you to store and analyze massive amounts of data. It supports both structured and unstructured data.
+      tags:
+        - "Azure"
+        - "Data"
+      isNameable: true
+      color: '#0078D4'
+      icon: storage
+
+  azure-cosmos-db:
+    name: Azure Cosmos DB
+    options:
+      accepted:
+        input:
+          - azure-functions
+      description: Azure Cosmos DB is a globally distributed, multi-model database service that provides low-latency, scalable, and highly available data storage. It supports various data models and APIs.
+      tags:
+        - "Azure"
+        - "Database"
+      isNameable: true
+      color: '#0078D4'
+      icon: database
