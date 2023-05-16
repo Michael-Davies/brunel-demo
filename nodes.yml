@@ -26,7 +26,7 @@ nodes:
         - "Serverless"
       isNameable: true
       color: '#FF9900'
-      icon: lambda
+      icon: server
 
   aws-eks:
     name: AWS Elastic Kubernetes Service (EKS)
@@ -40,7 +40,7 @@ nodes:
         - "Kubernetes"
       isNameable: true
       color: '#FF9900'
-      icon: cluster
+      icon: server
 
   aws-ec2:
     name: AWS EC2
@@ -68,7 +68,7 @@ nodes:
         - "ECS"
       isNameable: true
       color: '#FF9900'
-      icon: container
+      icon: server
 
   aws-rds-mysql:
     name: AWS RDS MySQL
@@ -132,7 +132,7 @@ nodes:
         - "Storage"
       isNameable: true
       color: '#FF9900'
-      icon: storage
+      icon: database
 
   aws-dynamodb:
     name: AWS DynamoDB
@@ -160,7 +160,7 @@ nodes:
         - "Messaging"
       isNameable: true
       color: '#00DB00'
-      icon: queue
+      icon: server
 
   aws-sns:
     name: AWS SNS
@@ -174,7 +174,7 @@ nodes:
         - "Notification"
       isNameable: true
       color: '#0000FF'
-      icon: notification
+      icon: server
 
   aws-glue:
     name: AWS Glue
@@ -188,7 +188,7 @@ nodes:
         - "Data"
       isNameable: true
       color: '#FF00FF'
-      icon: glue
+      icon: server
 
   aws-redshift:
     name: AWS Redshift
@@ -202,7 +202,7 @@ nodes:
         - "Data"
       isNameable: true
       color: '#FF00FF'
-      icon: redshift
+      icon: database
   aws-step-functions:
     name: AWS Step Functions
     options:
@@ -215,7 +215,7 @@ nodes:
         - "Workflow"
       isNameable: true
       color: '#800080'
-      icon: workflow
+      icon: server
   gcp-cloud-functions:
     name: Google Cloud Functions
     options:
@@ -228,7 +228,7 @@ nodes:
         - "Serverless"
       isNameable: true
       color: '#4285F4'
-      icon: function
+      icon: server
 
   gcp-compute-engine:
     name: Google Compute Engine
@@ -256,7 +256,7 @@ nodes:
         - "Kubernetes"
       isNameable: true
       color: '#4285F4'
-      icon: cluster
+      icon: server
 
   azure-functions:
     name: Azure Functions
@@ -270,7 +270,7 @@ nodes:
         - "Serverless"
       isNameable: true
       color: '#0078D4'
-      icon: function
+      icon: server
 
   azure-virtual-machines:
     name: Azure Virtual Machines
@@ -298,7 +298,7 @@ nodes:
         - "Kubernetes"
       isNameable: true
       color: '#0078D4'
-      icon: cluster
+      icon: server
 
   azure-sql-database:
     name: Azure SQL Database
@@ -327,7 +327,7 @@ nodes:
         - "Storage"
       isNameable: true
       color: '#0078D4'
-      icon: storage
+      icon: database
 
   azure-service-bus:
     name: Azure Service Bus
@@ -341,7 +341,7 @@ nodes:
         - "Messaging"
       isNameable: true
       color: '#0078D4'
-      icon: queue
+      icon: server
 
   azure-event-grid:
     name: Azure Event Grid
@@ -355,7 +355,7 @@ nodes:
         - "Event"
       isNameable: true
       color: '#0078D4'
-      icon: event
+      icon: server
 
   azure-logic-apps:
     name: Azure Logic Apps
@@ -369,7 +369,7 @@ nodes:
         - "Workflow"
       isNameable: true
       color: '#0078D4'
-      icon: workflow
+      icon: server
 
   azure-data-lake-storage:
     name: Azure Data Lake Storage
@@ -383,7 +383,7 @@ nodes:
         - "Data"
       isNameable: true
       color: '#0078D4'
-      icon: storage
+      icon: database
 
   azure-cosmos-db:
     name: Azure Cosmos DB
@@ -410,7 +410,7 @@ nodes:
         - "Serverless"
       isNameable: true
       color: '#4285F4'
-      icon: cloud_run
+      icon: server
 
   gcp-cloud-sql:
     name: Google Cloud SQL
@@ -438,7 +438,7 @@ nodes:
         - "Storage"
       isNameable: true
       color: '#4285F4'
-      icon: storage
+      icon: database
 
   gcp-pubsub:
     name: Google Cloud Pub/Sub
@@ -452,7 +452,7 @@ nodes:
         - "Messaging"
       isNameable: true
       color: '#4285F4'
-      icon: pubsub
+      icon: server
 
   gcp-dataflow:
     name: Google Cloud Dataflow
@@ -467,7 +467,7 @@ nodes:
         - "Data"
       isNameable: true
       color: '#4285F4'
-      icon: dataflow
+      icon: server
 
   gcp-bigquery:
     name: Google BigQuery
@@ -481,7 +481,7 @@ nodes:
         - "Data"
       isNameable: true
       color: '#4285F4'
-      icon: bigquery
+      icon: server
   gcp-api-gateway:
     name: GCP API Gateway
     options:
