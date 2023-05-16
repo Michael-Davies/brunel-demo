@@ -13,52 +13,65 @@ nodes:
         - "AWS"
         - "Gateway"
       icon: cloud
+
   aws-lambda:
-    name: Microservice (Lambda)
+    name: AWS Lambda
     options:
       accepted:
         input:
           - aws-api-gateway
+      description: AWS Lambda lets you run your code without provisioning or managing servers. You can build serverless applications and services that respond to events and automatically scale.
       tags:
         - "AWS"
         - "Serverless"
       isNameable: true
-      color: '#f37b05'
+      color: '#FF9900'
+      icon: function
+
   aws-eks:
-    name: Microservice (EKS)
+    name: AWS Elastic Kubernetes Service (EKS)
     options:
       accepted:
         input:
           - aws-api-gateway
+      description: Amazon Elastic Kubernetes Service (EKS) is a fully managed Kubernetes service. It allows you to run containers without managing the underlying infrastructure.
       tags:
         - "AWS"
-        - "Kubenetes"
+        - "Kubernetes"
       isNameable: true
-      color: '#f37b05'
+      color: '#FF9900'
+      icon: cluster
+
   aws-ec2:
-    name: Microservice (EC2)
+    name: Amazon EC2
     options:
       accepted:
         input:
           - aws-api-gateway
+      description: Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity in the cloud. It allows you to create and configure virtual servers for various workloads.
       tags:
         - "AWS"
         - "EC2"
       isNameable: true
-      color: '#f37b05'
+      color: '#FF9900'
+      icon: server
+
   aws-ecs:
-    name: Microservice (ECS)
+    name: Amazon ECS
     options:
       accepted:
         input:
           - aws-api-gateway
+      description: Amazon Elastic Container Service (ECS) is a fully managed container orchestration service. It allows you to easily run and scale containerized applications.
       tags:
         - "AWS"
         - "ECS"
       isNameable: true
-      color: '#f37b05'
+      color: '#FF9900'
+      icon: container
+
   aws-rds-mysql:
-    name: AWS RDS MySQL
+    name: Amazon RDS MySQL
     options:
       accepted:
         input:
@@ -66,14 +79,16 @@ nodes:
           - aws-eks
           - aws-ecs
           - aws-ec2
+      description: Amazon RDS for MySQL is a fully managed relational database service that provides an easy way to set up, operate, and scale a MySQL database in the cloud.
       tags:
         - "AWS"
         - "Database"
       isNameable: true
       color: '#146eb4'
       icon: database
+
   aws-rds-postgres:
-    name: AWS RDS Postgres
+    name: Amazon RDS PostgreSQL
     options:
       accepted:
         input:
@@ -81,6 +96,7 @@ nodes:
           - aws-eks
           - aws-ecs
           - aws-ec2
+      description: Amazon RDS for PostgreSQL is a fully managed relational database service that provides an easy way to set up, operate, and scale a PostgreSQL database in the cloud.
       tags:
         - "AWS"
         - "Database"
@@ -88,7 +104,7 @@ nodes:
       color: '#146eb4'
       icon: database
   aws-rds-mariadb:
-    name: AWS RDS MariaDB
+    name: Amazon RDS MariaDB
     options:
       accepted:
         input:
@@ -96,86 +112,206 @@ nodes:
           - aws-eks
           - aws-ecs
           - aws-ec2
+      description: Amazon RDS for MariaDB is a fully managed relational database service that provides an easy way to set up, operate, and scale a MariaDB database in the cloud.
       tags:
         - "AWS"
         - "Database"
       isNameable: true
       color: '#146eb4'
       icon: database
+
   aws-s3:
-    name: AWS S3
+    name: Amazon S3
     options:
       accepted:
         input:
           - aws-lambda
+      description: Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
       tags:
         - "AWS"
         - "Storage"
       isNameable: true
       color: '#FF9900'
+      icon: storage
+
   aws-dynamodb:
-    name: AWS DynamoDB
+    name: Amazon DynamoDB
     options:
       accepted:
         input:
           - aws-lambda
+      description: Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
       tags:
         - "AWS"
         - "Database"
       isNameable: true
       color: '#DBDB00'
+      icon: database
+
   aws-sqs:
-    name: AWS SQS
+    name: Amazon SQS
     options:
       accepted:
         input:
           - aws-lambda
+      description: Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
       tags:
         - "AWS"
         - "Messaging"
       isNameable: true
       color: '#00DB00'
+      icon: queue
+
   aws-sns:
-    name: AWS SNS
+    name: Amazon SNS
     options:
       accepted:
         input:
           - aws-lambda
+      description: Amazon Simple Notification Service (SNS) is a fully managed messaging service that enables you to coordinate and send messages to a large number of subscribers.
       tags:
         - "AWS"
         - "Notification"
       isNameable: true
       color: '#0000FF'
+      icon: notification
+
   aws-glue:
     name: AWS Glue
     options:
       accepted:
         input:
           - aws-ec2
+      description: AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load data for analytics.
       tags:
         - "AWS"
         - "Data"
       isNameable: true
       color: '#FF00FF'
+      icon: glue
+
   aws-redshift:
-    name: AWS Redshift
+    name: Amazon Redshift
     options:
       accepted:
         input:
           - aws-ec2
+      description: Amazon Redshift is a fully managed data warehousing service that provides fast and scalable analysis of large datasets.
       tags:
         - "AWS"
         - "Data"
       isNameable: true
       color: '#FF00FF'
+      icon: redshift
   aws-step-functions:
     name: AWS Step Functions
     options:
       accepted:
         input:
           - aws-lambda
+      description: AWS Step Functions is a serverless workflow service that enables you to coordinate multiple AWS services into serverless workflows.
       tags:
         - "AWS"
         - "Workflow"
       isNameable: true
       color: '#800080'
+      icon: workflow
+  gcp-cloud-functions:
+    name: Google Cloud Functions
+    options:
+      accepted:
+        input:
+          - gcp-api-gateway
+      description: Google Cloud Functions is a serverless execution environment for building and connecting cloud services. It allows you to write and deploy code that responds to events without the need to manage servers.
+      tags:
+        - "GCP"
+        - "Serverless"
+      isNameable: true
+      color: '#4285F4'
+      icon: function
+
+  gcp-compute-engine:
+    name: Google Compute Engine
+    options:
+      accepted:
+        input:
+          - gcp-api-gateway
+      description: Google Compute Engine provides virtual machines in the cloud that you can customize and control. It allows you to run your applications on Google's infrastructure.
+      tags:
+        - "GCP"
+        - "Compute"
+      isNameable: true
+      color: '#4285F4'
+      icon: server
+
+  gcp-kubernetes-engine:
+    name: Google Kubernetes Engine (GKE)
+    options:
+      accepted:
+        input:
+          - gcp-api-gateway
+      description: Google Kubernetes Engine (GKE) is a managed, production-ready environment for deploying containerized applications. It allows you to run and manage Kubernetes clusters.
+      tags:
+        - "GCP"
+        - "Kubernetes"
+      isNameable: true
+      color: '#4285F4'
+      icon: cluster
+
+  azure-functions:
+    name: Azure Functions
+    options:
+      accepted:
+        input:
+          - azure-api-management
+      description: Azure Functions is a serverless compute service that allows you to run event-triggered code without provisioning or managing infrastructure. It enables you to build applications with serverless architecture.
+      tags:
+        - "Azure"
+        - "Serverless"
+      isNameable: true
+      color: '#0078D4'
+      icon: function
+
+  azure-virtual-machines:
+    name: Azure Virtual Machines
+    options:
+      accepted:
+        input:
+          - azure-api-management
+      description: Azure Virtual Machines allows you to deploy and run Windows or Linux virtual machines in the cloud. It provides flexibility and control over your infrastructure.
+      tags:
+        - "Azure"
+        - "Compute"
+      isNameable: true
+      color: '#0078D4'
+      icon: server
+
+  azure-kubernetes-service:
+    name: Azure Kubernetes Service (AKS)
+    options:
+      accepted:
+        input:
+          - azure-api-management
+      description: Azure Kubernetes Service (AKS) simplifies the deployment, management, and scaling of containerized applications using Kubernetes. It provides a managed Kubernetes environment.
+      tags:
+        - "Azure"
+        - "Kubernetes"
+      isNameable: true
+      color: '#0078D4'
+      icon: cluster
+
+  azure-sql-database:
+    name: Azure SQL Database
+    options:
+      accepted:
+        input:
+          - azure-functions
+          - azure-kubernetes-service
+          - azure-virtual-machines
+      description: Azure SQL Database is a managed relational database service that provides a highly available, scalable, and secure database platform. It supports both SQL Server and MySQL.
+      tags:
+        - "Azure"
+        - "Database"
+      isNameable: true
+      color: '#0078D4'
+      icon: database
